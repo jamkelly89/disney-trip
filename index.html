@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disneyland Trip Plan</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 860px; margin: 0 auto; padding: 16px; color: #222; line-height: 1.45; }
+  h1 { margin: 0 0 4px; }
+  .sub { color: #666; margin: 0 0 16px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 2px solid #ddd; margin-bottom: 16px; }
+  .tabs button { border: 0; background: #eee; padding: 8px 14px; border-radius: 6px 6px 0 0; cursor: pointer; font-size: 15px; }
+  .tabs button.active { background: #1f4e9c; color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0 16px; }
+  th, td { border: 1px solid #ddd; padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: #f4f4f4; }
+  .yes { background: #e6f4ea; }
+  .no { background: #fce8e6; }
+  .maybe { background: #fff4d6; }
+  .hl { border: 2px solid #1f9d55; background: #f0faf4; border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+  .note { color: #666; font-size: 14px; }
+  .tag { font-size: 12px; background: #eee; border-radius: 4px; padding: 1px 6px; margin-left: 4px; }
+  .todo li { margin: 4px 0; }
+  details { border: 1px solid #ddd; border-radius: 6px; padding: 8px 12px; margin: 8px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>Disneyland Trip Plan</h1>
+<p class="sub">Me, my wife, and my daughter (3, turns 4 in February) &middot; Disneyland Park only &middot; 2 days &middot; Sunday Oct 25, 2026 is the day we've researched</p>
+<p class="note"><b>[Verified]</b> = read from Disney's site or pasted from it during this chat. <b>[Memory]</b> = general knowledge, confirm before relying on it.</p>
+
+<div class="tabs" id="tabs">
+  <button data-tab="overview" class="active">Overview</button>
+  <button data-tab="rides">Rides</button>
+  <button data-tab="lanes">Lightning Lane &amp; Rider Switch</button>
+  <button data-tab="entertainment">Entertainment</button>
+  <button data-tab="parking">Parking</button>
+</div>
+
+<!-- OVERVIEW -->
+<div class="panel active" id="overview">
+  <h2>Open items</h2>
+  <ul class="todo">
+    <li>&#9745; Daughter's height: 37&ndash;37.5". Plan on 38" rides yes, 40" rides no. Cast Members measure at the ride, so at 37.5" she may be turned away from a 38" ride. Re-measure closer to the trip.</li>
+    <li>&#9744; Ticket prices for our dates (disneyland.com)</li>
+    <li>&#9744; Lightning Lane prices: Multi Pass starts at $35 per ticket per day. Single Pass and Premier prices are in the Disneyland app</li>
+    <li>&#9744; Park reservation for Disneyland Park on each day</li>
+    <li>&#9744; Parking price, hours, and re-entry rule</li>
+  </ul>
+
+  <h2>Tickets</h2>
+  <ul>
+    <li>2 days at Disneyland Park only. No Park Hopper, since we're skipping California Adventure.</li>
+    <li>Me: 1 or 2 days. Wife and daughter: 2 or 3 days. A 3rd day for them would be my 2nd day.</li>
+  </ul>
+
+  <h2>Oct 25 (Sunday) at a glance</h2>
+  <ul>
+    <li>Halloween Time runs August 21 through October 31, 2026, so expect Sunday crowds.</li>
+    <li><b>Bluey's Best Day Ever!</b> is the one we want. Sunday times: 11:00 AM, 12:20 PM, 1:40 PM, 3:25 PM, 4:45 PM. See the Entertainment tab.</li>
+    <li>Do Mickey &amp; Minnie's Runaway Railway first thing, when waits are shortest.</li>
+    <li>World of Color (California Adventure) isn't playing while we're there, and we're skipping that park anyway.</li>
+    <li>Oogie Boogie Bash (the ticketed Halloween party) is at California Adventure and sold out, so it doesn't affect us.</li>
+  </ul>
+
+  <h2>Practical</h2>
+  <ul>
+    <li>Download the Disneyland app before the trip.</li>
+    <li>A stroller will probably get used. Plan a midday break.</li>
+  </ul>
+</div>
+
+<!-- RIDES -->
+<div class="panel" id="rides">
+  <h2>Disneyland Park rides</h2>
+  <p class="note">Lightning Lane tiers are from Disney's page [Verified]. Height requirements are from memory [Memory]. You also checked the 38"-and-up filter on Disney's attraction list, but the map screenshot had no ride names, so I couldn't cross-check them. Confirm in the app.</p>
+  <table>
+    <tr><th>Ride</th><th>Lightning Lane</th><th>Height</th><th>Daughter</th></tr>
+    <tr class="yes"><td>Mickey &amp; Minnie's Runaway Railway</td><td>Multi Pass</td><td>none</td><td>Yes. Best fit, long waits</td></tr>
+    <tr class="yes"><td>Buzz Lightyear Astro Blasters</td><td>Multi Pass</td><td>none</td><td>Yes</td></tr>
+    <tr class="yes"><td>Roger Rabbit's Car Toon Spin</td><td>Multi Pass</td><td>none</td><td>Yes</td></tr>
+    <tr class="yes"><td>"it's a small world"</td><td>Multi Pass</td><td>none</td><td>Yes. Line moves fast, skip LL</td></tr>
+    <tr class="yes"><td>Autopia</td><td>Multi Pass</td><td>~32" as passenger</td><td>Probably</td></tr>
+    <tr class="maybe"><td>Millennium Falcon: Smugglers Run</td><td>Multi Pass</td><td>38"</td><td>Borderline at 37&ndash;37.5"</td></tr>
+    <tr class="no"><td>Tiana's Bayou Adventure</td><td>Multi Pass</td><td>40"</td><td>No</td></tr>
+    <tr class="no"><td>Star Tours</td><td>Multi Pass</td><td>40"</td><td>No</td></tr>
+    <tr class="no"><td>Big Thunder Mountain Railroad</td><td>Multi Pass</td><td>40"</td><td>No</td></tr>
+    <tr class="no"><td>Space Mountain</td><td>Multi Pass</td><td>40"</td><td>No</td></tr>
+    <tr class="no"><td>Star Wars: Rise of the Resistance</td><td>Single Pass (or Premier)</td><td>40"</td><td>No</td></tr>
+    <tr class="no"><td>Matterhorn Bobsleds</td><td>Multi Pass</td><td>42"</td><td>No</td></tr>
+    <tr class="no"><td>Indiana Jones Adventure</td><td>Multi Pass</td><td>46"</td><td>No</td></tr>
+    <tr class="maybe"><td>Haunted Mansion Holiday</td><td>Multi Pass</td><td>none</td><td>Maybe too scary</td></tr>
+  </table>
+  <p><b>Standby</b> means the regular line. Anyone with park admission can join it, and it needs no extra ticket or reservation. Rides without Lightning Lane are standby only, so Lightning Lane doesn't apply to them. See the slow rides table below for which of her rides are standby.</p>
+  <p><b>Plan:</b> we'll ride together. If a parent wants a 40"+ ride alone, use Rider Switch.</p>
+
+  <h2>Slow rides she can ride (18, any height)</h2>
+  <p class="note">From Disney's attraction list, "Slow Rides" category, which you pasted [Verified]. Every one is listed "Any Height". The Disney tags (Dark, Loud, Scary, Water Rides) are Disney's. The Lightning Lane column is from the Multi Pass list earlier; anything not on it is standby only. Hours on the page were "today's", not Oct 25, so confirm in the app.</p>
+  <table>
+    <tr><th>Ride</th><th>Disney tags</th><th>Lightning Lane</th><th>Notes</th></tr>
+    <tr class="yes"><td>Dumbo the Flying Elephant</td><td>Slow, Spinning</td><td>Standby</td><td>Classic first ride. Ride early or late.</td></tr>
+    <tr class="yes"><td>King Arthur Carrousel</td><td>Loud, Slow, Spinning</td><td>Standby</td><td>Hours listed 8:00 AM &ndash; 8:45 PM, then 10:15 &ndash; 11:00 PM.</td></tr>
+    <tr class="yes"><td>Casey Jr. Circus Train</td><td>Slow</td><td>Standby</td><td>Gentle. 1955 original ride.</td></tr>
+    <tr class="yes"><td>Storybook Land Canal Boats</td><td>Slow, Water Rides</td><td>Standby</td><td>Gentle boat past miniature villages.</td></tr>
+    <tr class="yes"><td>Disneyland Railroad</td><td>Dark, Loud, Slow</td><td>Standby</td><td>Also gets you around the park. Good for a rest.</td></tr>
+    <tr class="yes"><td>Main Street Vehicles</td><td>Slow</td><td>Standby</td><td>Closes early: listed hours were 8:00 AM &ndash; 3:00 PM.</td></tr>
+    <tr class="yes"><td>Mark Twain Riverboat</td><td>Loud, Slow, Water Rides</td><td>Standby</td><td>Closes early: listed hours were 9:00 AM &ndash; 5:40 PM.</td></tr>
+    <tr class="maybe"><td>Sailing Ship Columbia</td><td>Loud, Slow, Water Rides</td><td>Standby</td><td>No hours were listed, so it may not be running. Disney says "Guest must be ambulatory": able to walk, with no wheelchair or ECV. If all three of us walk, this doesn't affect us.</td></tr>
+    <tr class="yes"><td>Jungle Cruise</td><td>Loud, Slow, Water Rides</td><td>Standby</td><td>Boat ride with a skipper.</td></tr>
+    <tr class="yes"><td>Peter Pan's Flight</td><td>Dark, Loud, Slow</td><td>Standby</td><td>Usually the longest line of her rides. Ride early or late.</td></tr>
+    <tr class="yes"><td>Alice in Wonderland</td><td>Dark, Loud, Slow</td><td>Standby</td><td>Dark ride.</td></tr>
+    <tr class="yes"><td>The Many Adventures of Winnie the Pooh</td><td>Dark, Loud, Slow</td><td>Standby</td><td>Kid-focused.</td></tr>
+    <tr class="yes"><td>"it's a small world"</td><td>Loud, Slow, Water Rides</td><td>Multi Pass</td><td>Line moves fast, so Lightning Lane is rarely worth it.</td></tr>
+    <tr class="maybe"><td>"it's a small world" Holiday</td><td>Loud, Slow, Water Rides</td><td>Unknown</td><td>Listed separately, but I can't tell if it replaces the regular version on Oct 25 (Halloween Time). Check the app.</td></tr>
+    <tr class="yes"><td>Buzz Lightyear Astro Blasters</td><td>Dark, Loud, Slow</td><td>Multi Pass</td><td>Interactive. Shoot lasers at targets.</td></tr>
+    <tr class="yes"><td>Roger Rabbit's Car Toon Spin</td><td>Dark, Loud, Slow</td><td>Multi Pass</td><td>Interactive and spinning. Hours listed to 8:00 PM, then 10:15 &ndash; 11:00 PM.</td></tr>
+    <tr class="maybe"><td>Pinocchio's Daring Journey</td><td>Dark, Loud, <b>Scary</b></td><td>Standby</td><td>Disney tags it Scary. Skip unless she handles dark rides well.</td></tr>
+    <tr class="maybe"><td>Pirates of the Caribbean</td><td>Dark, Loud, <b>Scary</b></td><td>Standby</td><td>Disney tags it Scary. Skip unless she handles dark rides well.</td></tr>
+  </table>
+  <p><b>Takeaway:</b> only three of her 18 rides (small world, Buzz, Roger Rabbit) are on the Multi Pass list, and Runaway Railway is the only other one worth a reservation. Most of her day is standby, so arrive early and use Lightning Lane sparingly.</p>
+  <p class="note">Still not on this list: Mickey &amp; Minnie's Runaway Railway, Autopia and Smugglers Run. They aren't in the Slow Rides category, so the 38" check for them is still from memory.</p>
+</div>
+
+<!-- LIGHTNING LANE & RIDER SWITCH -->
+<div class="panel" id="lanes">
+  <h2>Rider Switch</h2>
+  <p><b>Free.</b> Disney's Rider Switch page lists no charge.</p>
+  <h3>How it works [Verified]</h3>
+  <ol>
+    <li>At the ride entrance, with the whole group, tell a Cast Member you want Rider Switch.</li>
+    <li>The group splits in two. Party A enters the queue and rides first. Party B waits outside the queue.</li>
+    <li>A Cast Member scans Party B's tickets and tells them where to return.</li>
+    <li>After Party A rides, <b>up to two people</b> from Party B go to the return location, get rescanned, and go through the Rider Switch entrance, skipping the standard queue.</li>
+  </ol>
+  <ul>
+    <li>Available at most attractions.</li>
+    <li>Our use: one parent rides, the other waits with our daughter, then the waiting parent rides without queuing again.</li>
+  </ul>
+
+  <h2>Lightning Lane</h2>
+  <p>Paid add-on, separate from Rider Switch. Disney's Rider Switch page doesn't say whether the two can be used together on one ride, so ask a Cast Member before buying Lightning Lane for a ride we'd do with Rider Switch.</p>
+  <h3>Options [Verified]</h3>
+  <ul>
+    <li><b>Multi Pass</b>: choose from the Multi Pass attractions in the Rides tab. Starts at $35 per ticket per day; price varies by date.</li>
+    <li><b>Single Pass</b>: bought per ride, for up to 2 different Single Pass attractions a day. Price varies by date and attraction. Rise of the Resistance is the one I know of; the pricing page implies there may be a second, so check the app. Can't be added with a Multi Pass.</li>
+    <li><b>Premier Pass</b>: one entry to each available Lightning Lane attraction in both parks for the day. Includes Single Pass and Multi Pass rides. Price varies by date and demand, and shows in the app up to 7 days before the visit.</li>
+    <li>Limit of one Lightning Lane entry per ride, per day, per pass. Availability is limited and rides may close.</li>
+    <li>Every pass needs valid park admission and a park reservation for Disneyland Park.</li>
+  </ul>
+</div>
+
+<!-- ENTERTAINMENT -->
+<div class="panel" id="entertainment">
+  <h2>Highlight: Bluey's Best Day Ever!</h2>
+  <div class="hl">
+    <p><b>Fantasyland, Disneyland Park &middot; Any height</b></p>
+    <p>Bluey and Bingo host a fun-filled celebration of Bluey episodes with interactive games and a live musical show. [Verified]</p>
+    <p><b>Sunday, October 25, 2026:</b> 11:00 AM, 12:20 PM, 1:40 PM, 3:25 PM, 4:45 PM.</p>
+  </div>
+
+  <h2>Appendix: other Disneyland Park entertainment</h2>
+
+  <details>
+    <summary>Fantasmic!</summary>
+    <p>Frontierland, Disneyland Park. 25 minutes. Mickey Mouse stars as heroes and villains battle on a grand scale. [Verified]</p>
+    <p><b>Sunday, October 25:</b> 9:00 PM and 10:30 PM. Likely too late for a 3-year-old. It's loud with villains and fire.</p>
+  </details>
+
+  <p class="note">From the Disneyland Park entertainment list you pasted. Times shown are "today's" at the moment you pasted the list, not necessarily Oct 25. Check the app for Sunday.</p>
+
+  <details>
+    <summary>Character experiences</summary>
+    <table>
+      <tr><th>Experience</th><th>Times (as listed)</th><th>Notes</th></tr>
+      <tr><td>Minnie's House (Toontown)</td><td>9:00 AM &ndash; 7:00 PM</td><td>Any height. A good candidate for her.</td></tr>
+      <tr><td>Meet Disney Princesses at Royal Hall</td><td>10:00 AM &ndash; 5:00 PM</td><td>Fantasy Faire area.</td></tr>
+      <tr><td>Fantasy Faire</td><td>no time listed</td><td>Classic characters and princesses, e.g. Cinderella.</td></tr>
+      <tr><td>Meet Tinker Bell in Pixie Hollow</td><td>8:15 &ndash; 10:20 AM, 11:15 AM &ndash; 2:30 PM</td><td>Classic characters.</td></tr>
+      <tr><td>Disney Visa Cardmember Star Wars Photo Opportunity</td><td>2:00 &ndash; 6:00 PM</td><td>Kylo Ren photo op. Listed for cardmembers.</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>Live entertainment</summary>
+    <table>
+      <tr><th>Show</th><th>Times (as listed)</th><th>Notes</th></tr>
+      <tr><td>Storytelling at Royal Theatre</td><td>10:15 AM, 11:25 AM, 12:40 PM, 2:15 PM, 3:25 PM, 4:35 PM</td><td>Indoor. Fantasy Faire.</td></tr>
+      <tr><td>A Christmas Fantasy Parade</td><td>no time listed</td><td>Down Main Street USA with toy soldiers, classic characters and princesses. It's on the list, but I can't confirm it runs Oct 25.</td></tr>
+    </table>
+  </details>
+
+  <details>
+    <summary>Halloween Time extras</summary>
+    <ul>
+      <li><b>Halloween Screams</b>: evening show with fireworks on select nights over Sleeping Beauty Castle. Free with admission. Fireworks are loud. Times not found.</li>
+      <li><b>Haunted Mansion Holiday</b>: Nightmare Before Christmas decor. Jack and Sally appear in New Orleans Square and villains appear in Fantasyland. The dark ride and the villains may be too much for a 3-year-old.</li>
+      <li><b>Pluto's Pumpkin Pursuit</b>: free family activity across the resort.</li>
+    </ul>
+  </details>
+</div>
+
+<!-- PARKING -->
+<div class="panel" id="parking">
+  <h2>Parking (staying near Santa Ana airport, driving)</h2>
+  <p class="note">All of this is [Memory]. Disney's parking page wouldn't load for me, so none of it is verified.</p>
+  <ul>
+    <li><b>Drive:</b> roughly 12&ndash;15 miles, typically 20&ndash;30 minutes. Sunday traffic is usually lighter than weekdays.</li>
+    <li><b>Two structures:</b> Mickey &amp; Friends and Pixar Pals. Disney's map shows them as neighbors, west of the parks. Which one has a tram, and which is closer to which park, is unconfirmed. Follow the app or signs on arrival.</li>
+    <li><b>Price:</b> roughly $35&ndash;$50 per day. There's also a closer, pricier "preferred" option.</li>
+    <li>Parking is paid per day. Keep the receipt, since it generally allows re-entry the same day.</li>
+    <li>After parking you go through Downtown Disney and bag security before the park gates. Allow extra time with a stroller.</li>
+    <li>Alternative: rideshare drop-off at Downtown Disney. On a 2-day trip, compare parking cost against two round trips.</li>
+  </ul>
+  <h3>To confirm</h3>
+  <ul class="todo">
+    <li>&#9744; Current standard and preferred parking price</li>
+    <li>&#9744; Structure hours and any EV charging</li>
+    <li>&#9744; Whether re-entry is allowed between days, or only same-day</li>
+  </ul>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('#tabs button');
+  const panels = document.querySelectorAll('.panel');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.toggle('active', x === b));
+    panels.forEach(p => p.classList.toggle('active', p.id === b.dataset.tab));
+  }));
+</script>
+</body>
+</html>
